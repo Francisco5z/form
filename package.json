@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mongoose": "^5.7.30",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "sucrase": "^3.15.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/jest": "^26.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.22"
+  },
+  "scripts": {
+    "dev": "cls && nodemon src/server.ts --ignore node_modules",
+    "test": "cls && jest --no-cache"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
